@@ -32,10 +32,5 @@ services:
             - ./client:/usr/app
         environment: 
             VUE_APP_API_URL: /api
-    
-    nginx:
-        build:
-            context: ./nginx
-            dockerfile: Dockerfile.nginx
         ports: 
-            - 80:80
+            - 5000:5000
